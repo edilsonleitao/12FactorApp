@@ -1,0 +1,32 @@
+{
+  "name": "12FactorApp",
+  "version": "1.0.0",
+  "description": "This is a academic project about The Twelve-Factor App methodology to acquire the graduation in Information Systems on Universidade 7 de Setembro.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js",
+    "start": "yarn src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edilsonleitao/12FactorApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edilsonleitao/12FactorApp/issues"
+  },
+  "homepage": "https://github.com/edilsonleitao/12FactorApp#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.9",
+    "mongoose-paginate": "^5.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
