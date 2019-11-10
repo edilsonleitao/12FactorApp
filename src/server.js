@@ -6,6 +6,7 @@ const winston = require('winston');
 const {Loggly} = require('winston-loggly-bulk');
 
 dotenv.config();
+const port = process.env.PORT || process.env.SERVER_PORT;
 
 winston.add(new Loggly({
     token: process.env.LOGGLY_TOKEN,
@@ -23,7 +24,7 @@ mongoose.connect(
 
 server.use(express.json());
 server.use(routes);
-const port = process.env.PORT || process.env.SERVER_PORT;
+
 server.listen(port, () => {
   winston.log('info', `Server iniciado na porta: ${port}.`)
 });
